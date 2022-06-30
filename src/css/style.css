@@ -23,9 +23,13 @@ html {
 }
 
 body {
+    position: relative;
     padding: 0;
     margin: 0;
     background: #f1f1f1;
+}
+html, body {
+    overflow-x: hidden;
 }
 
 table {
@@ -45,23 +49,31 @@ table {
     box-shadow: 1px 1px 3px #aaa;
 
 }
-.mainDiv {width: 600px; background:#fff; padding: 20px; border-radius: 10px; box-shadow:  0 0 1px rgb(56 60 67 / 5%), 0 1px 3px 0 rgb(56 60 67 / 15%);}
+
+.mainDiv {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgb(56 60 67 / 5%), 0 1px 3px 0 rgb(56 60 67 / 15%);
+}
 
 
 .container {
     position: absolute;
     top: 80px;
+    padding: 20px;
 
 }
 
-@media(min-width: 1224px) {
+@media(min-width: 768px) {
     .container {
         left: 0px
     }
 }
 
-@media(min-width: 1224px) {
+@media(min-width: 768px) {
     .container {
-        left: 300px
+        left: 280px
     }
 }

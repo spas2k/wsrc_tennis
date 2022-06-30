@@ -28,3 +28,5 @@ button {
     color: white;
     background-color: hsl(0, 100%, 35%)
 }
+
+.bottomMenuButton {width: 50px;}
