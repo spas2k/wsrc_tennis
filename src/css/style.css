@@ -1,0 +1,67 @@
+@import 'buttons.css';
+@import 'navBar.css';
+/* @import '../../node_modules/react-pro-sidebar/dist/scss/styles.scss'; */
+@import-normalize;
+
+
+*,
+*::before,
+*::after {
+    color: #666;
+    box-sizing: border-box;
+
+}
+
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+    border-style: none;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #f1f1f1;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.mainMenu {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    background: #333;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    z-index: 776;
+    padding: 20px;
+    box-shadow: 1px 1px 3px #aaa;
+
+}
+.mainDiv {width: 600px; background:#fff; padding: 20px; border-radius: 10px; box-shadow:  0 0 1px rgb(56 60 67 / 5%), 0 1px 3px 0 rgb(56 60 67 / 15%);}
+
+
+.container {
+    position: absolute;
+    top: 80px;
+
+}
+
+@media(min-width: 1224px) {
+    .container {
+        left: 0px
+    }
+}
+
+@media(min-width: 1224px) {
+    .container {
+        left: 300px
+    }
+}
