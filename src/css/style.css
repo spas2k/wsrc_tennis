@@ -7,7 +7,7 @@
 *,
 *::before,
 *::after {
-    color: #666;
+
     box-sizing: border-box;
 
 }
@@ -23,31 +23,49 @@ html {
 }
 
 body {
+
     position: relative;
     padding: 0;
     margin: 0;
     background: #f1f1f1;
 }
-html, body {
+
+html,
+body {
     overflow-x: hidden;
+    height: 100vh;
 }
+
+a.link, a:visited {color:#fff}
 
 table {
     border-collapse: collapse;
 }
 
+ul {
+    
+    list-style-type: none;
+    padding: 0; margin: 0; 
+}
+li {}
+
 .mainMenu {
     position: fixed;
     left: 0;
     top: 50px;
-    background: #333;
+    background: #222;
     color: #fff;
     width: 250px;
     height: 100vh;
     z-index: 776;
-    padding: 20px;
-    box-shadow: 1px 1px 3px #aaa;
+    padding-top: 50px;
+    transition: .2s;
+    overflow: hidden;
+}
 
+.mmCollapse {
+    width: 60px;
+    transition: .2s;
 }
 
 .mainDiv {
@@ -56,24 +74,32 @@ table {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 1px rgb(56 60 67 / 5%), 0 1px 3px 0 rgb(56 60 67 / 15%);
+
 }
 
 
 .container {
-    position: absolute;
+    position: relative;
     top: 80px;
     padding: 20px;
+    width: 100%;
 
 }
 
+.boxShadow {
+    box-shadow: 0 0 1px rgb(56 60 67 / 5%), 0 1px 3px 0 rgb(56 60 67 / 15%);
+}
+
+.md {}
+
 @media(min-width: 768px) {
     .container {
-        left: 0px
+        left: 20px;
     }
 }
 
 @media(min-width: 768px) {
     .container {
-        left: 280px
+        left: 250px;
     }
 }

@@ -1,16 +1,15 @@
-// import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 export function Navbar() {
     return (
         <>
-            <div className="navBar">
-
+            <div className="navBar boxShadow">
                 <div className="navBrand" >
-                    {/* <NavLink to='/Home'> */}
+                    <NavLink to='/'>
                         <span style={{ color: "#5e9693", fontSize: "1.5rem", fontWeight: "bolder" }}>WSRC</span>
                         <span style={{ color: "#999", fontSize: "1.1rem", marginLeft: "10px", fontWeight: "bold" }}>Tennis</span>
-                    {/* </NavLink> */}
+                    </NavLink>
                     
                 </div>
 

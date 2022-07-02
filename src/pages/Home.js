@@ -1,7 +1,8 @@
 export function Home() {
     return (
         <>
-            <div className="mainDiv"><h1>Home</h1></div>
+            <div className="mainDiv"><h1>HomeHOMEHOMEHOMEHOME</h1></div>
         </>
+
     )
 }
