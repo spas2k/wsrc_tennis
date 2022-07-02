@@ -12,7 +12,6 @@ export function BottomMenu() {
     return (
         <>
             <div className="bottomMenu">
-                <h5 color='white'>{activeId}</h5>
                 <button className="bottomMenuButton"><MdHomeFilled /></button>
                 <button className="bottomMenuButton"><MdEditCalendar /></button>
                 <button className="bottomMenuButton"><MdSportsTennis /></button>
