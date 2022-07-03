@@ -131,8 +131,9 @@ a:visited.navItem {
 
 .bottomMenuBox,
 .bottomMenuButton {
-    flex-shrink: 0;
+
     text-align: center;
+    padding: 10px;
     transition: .2s
 }
 
@@ -147,7 +148,16 @@ a:visited.navItem {
     fill: #666;
 }
 
+.bottomMenuButton svg {
+    transition: .2s;
+    fill: #666;
+}
+
 .bottomMenuButton:hover svg {
     fill: #fff;
     transition: .2s;
+}
+
+.selected svg {
+    fill: #fff
 }

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import RouterContext from '../context/RouterContext';
 import { MdHomeFilled } from 'react-icons/md';
 import { MdEditCalendar } from 'react-icons/md';
 import { MdSportsTennis } from 'react-icons/md';
@@ -8,14 +9,16 @@ import { useNavigate } from "react-router-dom";
 
 export function MainMenu() {
 
-    let navigate = useNavigate();
 
+
+    let navigate = useNavigate();
+    const { activeId, setActiveId } = useContext(RouterContext);
     const routeChange = (e) => {
-        setActiveId(prevactiveId => e)
         let path = e;
+        setActiveId(path)
         navigate(path);
     }
-    const [activeId, setActiveId] = useState();
+
 
     function shrink() {
         var e = document.getElementById("mm1");
